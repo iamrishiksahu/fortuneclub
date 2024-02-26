@@ -1,0 +1,29 @@
+:root {
+    --primary: #027cff;
+  }
+  
+  .App {
+    margin: auto;
+    width: 420px;
+    height: fit-content;
+    min-height: 100vh;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: cyan;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .App {
+      width: 100%;
+      min-height: 100vh;
+    }
+  }
+  

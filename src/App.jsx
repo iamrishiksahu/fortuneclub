@@ -1,16 +1,19 @@
-import { useState } from 'react'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import WinGo from "./games/wingo/WinGo";
 
-function App() {
-
+export default function App() {
   return (
-    <>
-      <div>
-        
-      </div>
-     
-    </>
-  )
-}
+    <div className="App">
+      {/* Logged In */}
+      <Routes>
+        <Route path="/games">
+          {/* <Route index element={<WinGo />} /> */}
+          <Route path="win-go" element={<WinGo />} />
+        </Route>
 
-export default App
+        <Route path="*" element={<>Not Found</>} />
+      </Routes>
+    </div>
+  );
+}
