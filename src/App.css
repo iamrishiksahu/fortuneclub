@@ -1,5 +1,10 @@
+@import url('../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
+/* LIGHT THEME */
 :root {
     --primary: #027cff;
+    --bg-white: #ffffff;
+    --text-white: #ffffff;
   }
   
   .App {
@@ -14,6 +19,7 @@
   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   
   body {
