@@ -38,7 +38,9 @@ const FundsWidget = ({ amount }) => {
 
 export default FundsWidget
 
-const FundsActionButton = styled(Button)({
+const FundsActionButton = styled(Button, {
+    varian
+})({
     width: '50%', 
     display: 'flex', 
     gap: '1rem'
