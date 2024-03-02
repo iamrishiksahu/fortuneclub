@@ -1,31 +1,20 @@
 import { Box } from "@mui/material";
+import styled from "styled-components";
 
-export const PageParent = ({ children, padding, margin, sx }) => {
-  return (
-    <FlexBox column sx={{
-      width: '100%',
-      padding: padding || '1rem',
-      margin: margin || '0px',
-      ...sx
-    }}>
-      {children}
-    </FlexBox>
-  )
-}
+export const FlexBox = styled(Box)({
+  display: "flex",
+  width: '100%',
+  gap: (props) => props.gap || "1rem",
+  flexDirection: (props) => props.column ? "column" : "row",
+  alignItems: 'center',
+  justifyContent: 'center',
+})
 
-export const FlexBox = ({ children, column, gap, sx }) => {
-  return (
-    <Box
-      sx={{
-        display: "flex",
-        gap: gap || "1rem",
-        flexDirection: column ? "column" : "row",
-        alignItems: 'center',
-        justifyContent: 'center',
-        ...sx
-      }}
-    >
-      {children}
-    </Box>
-  );
-};
+export const PageParent = styled(FlexBox,{
+  name: 'parent-container'
+})({
+  flexDirection: 'column',
+  padding: (props) => props.padding || '1rem',
+  margin: (props) => props.margin || '0px',
+})
+

@@ -1,35 +1,52 @@
+/* BOOTSTRAP ICONS */
 @import url('../node_modules/bootstrap-icons/font/bootstrap-icons.css');
 
-/* LIGHT THEME */
+/* DARK THEME */
 :root {
-    --primary: #027cff;
-    --bg-white: #ffffff;
-    --text-white: #ffffff;
-  }
-  
+  --primary: #027cff;
+  --bg-white: #0c104f;
+  --bg-white2: #1e196b;
+  --text-white: #444;
+  --text-black: #fff;
+  --text1: #c5c8ff;
+  --text2: #202788;
+  --text3: #202788;
+  --text4: #ffffff;
+  --bg-white3: #1c1f4b;
+  --red1: #d84646;
+  --blue3: #3286ed;
+}
+
+.App {
+  margin: auto;
+  width: 420px;
+  height: fit-content;
+  min-height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: var(--bg-white);
+  color: var(--text-black);
+  font-family: "Poppins", sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  background-color: rgb(221, 231, 241);
+}
+
+@media only screen and (max-width: 500px) {
   .App {
-    margin: auto;
-    width: 420px;
-    height: fit-content;
+    width: 100%;
     min-height: 100vh;
-    font-family: sans-serif;
-    text-align: center;
-    background-color: cyan;
   }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: white;
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .App {
-      width: 100%;
-      min-height: 100vh;
-    }
-  }
-  
+}
