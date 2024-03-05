@@ -96,6 +96,7 @@ const TimeFrameItem = styled(Typography)({
   color: 'orange',
   padding: '.25rem .5rem',
   borderRadius: '.5rem',
+  cursor: 'pointer',
 })
 
 

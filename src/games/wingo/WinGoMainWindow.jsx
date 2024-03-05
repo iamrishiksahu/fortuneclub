@@ -66,7 +66,8 @@ const WinGoMainWindow = ({ multipliers, currentMultiplier, setCurrentMultiplier 
               backgroundColor: 'var(--primary)',
               padding: '0.5rem 1rem',
               borderRadius: '0.5rem',
-              boxShadow: '10px 10px 10px rgba(0,0,0,0.1)'
+              boxShadow: '10px 10px 10px rgba(0,0,0,0.1)',
+              cursor: 'pointer',
             }
             : ''
           return (
@@ -76,6 +77,7 @@ const WinGoMainWindow = ({ multipliers, currentMultiplier, setCurrentMultiplier 
               sx={{
                 transition: 'all 200ms ease',
                 padding: '0.5rem 0px',
+                cursor: 'pointer',
                 ...activeStyle,
               }}
             >{item}</Typography>
