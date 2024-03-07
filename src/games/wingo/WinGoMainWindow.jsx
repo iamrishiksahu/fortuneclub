@@ -45,16 +45,16 @@ const WinGoMainWindow = ({ multipliers, currentMultiplier, setCurrentMultiplier 
 
       <FlexBox sx={{ flexWrap: 'wrap', justifyContent: 'space-between' }}>
 
-        <img width={'15%'} src="https://damangames.in/assets/png/n0-f810bf6d.png" alt="0" />
-        <img width={'15%'} src="https://damangames.in/assets/png/n0-f810bf6d.png" alt="0" />
-        <img width={'15%'} src="https://damangames.in/assets/png/n0-f810bf6d.png" alt="0" />
-        <img width={'15%'} src="https://damangames.in/assets/png/n0-f810bf6d.png" alt="0" />
-        <img width={'15%'} src="https://damangames.in/assets/png/n0-f810bf6d.png" alt="0" />
-        <img width={'15%'} src="https://damangames.in/assets/png/n0-f810bf6d.png" alt="0" />
-        <img width={'15%'} src="https://damangames.in/assets/png/n0-f810bf6d.png" alt="0" />
-        <img width={'15%'} src="https://damangames.in/assets/png/n0-f810bf6d.png" alt="0" />
-        <img width={'15%'} src="https://damangames.in/assets/png/n0-f810bf6d.png" alt="0" />
-        <img width={'15%'} src="https://damangames.in/assets/png/n0-f810bf6d.png" alt="0" />
+        <img width={'15%'} src="/assets/coins/coin_0.png" alt="0" />
+        <img width={'15%'} src="/assets/coins/coin_1.png" alt="0" />
+        <img width={'15%'} src="/assets/coins/coin_2.png" alt="0" />
+        <img width={'15%'} src="/assets/coins/coin_3.png" alt="0" />
+        <img width={'15%'} src="/assets/coins/coin_4.png" alt="0" />
+        <img width={'15%'} src="/assets/coins/coin_5.png" alt="0" />
+        <img width={'15%'} src="/assets/coins/coin_6.png" alt="0" />
+        <img width={'15%'} src="/assets/coins/coin_7.png" alt="0" />
+        <img width={'15%'} src="/assets/coins/coin_8.png" alt="0" />
+        <img width={'15%'} src="/assets/coins/coin_9.png" alt="0" />
 
       </FlexBox>
 
