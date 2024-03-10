@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import WinGo from "./games/wingo/WinGo";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/HomePage/HomePage";
+import LoginPage from "./pages/LoginPage";
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       {/* Logged In */}
       <Routes>
         <Route path="/" element={<HomePage/>}/>
+        <Route path="/login" element={<LoginPage/>}/>
 
         <Route path="/games">
           {/* <Route index element={<WinGo />} /> */}

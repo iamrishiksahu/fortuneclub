@@ -5,6 +5,8 @@ import FundsWidget from "../../components/layouts/FundsWidget";
 import WinGoMainWindow from "./WinGoMainWindow";
 import TimerComponent from "./TimerComponent";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
+import HistoricalDataTable from "./HistoricalDataTable";
 
 const WinGo = () => {
 
@@ -12,17 +14,28 @@ const WinGo = () => {
   const multipliers = ['X1', 'X2', 'X5', 'X10', 'X20', 'X50', 'X100'];
   const [currentTimeFrame, setCurrentTimeframe] = useState(0);
   const [currentMultiplier, setCurrentMultiplier] = useState(0);
+  const navigate = useNavigate()
 
   const [winnersHitory, setWinnersHistory] = useState([1, 2, 4, 5, 6, 7, 8, 9]);
+
+  const handleLeavePage = (to) => {
+    // to: the endpoint where the user wants to leave to.
+
+    // Launch dialog
+    navigate(to)
+
+  }
 
   return (
     <PageParent>
 
       {/* TOP BAR */}
       <FlexBox position={'relative'} padding={"0.25rem 0rem"}>
-        <IconButton sx={{ position: 'absolute', left: '0', fontSize: '1.25rem', color: 'var(--text-black)' }}>
-          <i class="bi bi-chevron-left"></i>
-        </IconButton>
+
+
+          <IconButton onClick={() => handleLeavePage('/')} sx={{ position: 'absolute', left: '0', fontSize: '1.25rem', color: 'var(--text-black)' }}>
+            <i class="bi bi-chevron-left"></i>
+          </IconButton>
         <FlexBox>
           <img height={"14px"} src="/assets/common/WinGO_title.png" />
         </FlexBox>
@@ -86,6 +99,8 @@ const WinGo = () => {
       <WinGoMainWindow multipliers={multipliers} currentMultiplier={currentMultiplier} setCurrentMultiplier={setCurrentMultiplier} />
 
       {/* HISTORICAL DATA TABLE */}
+      <HistoricalDataTable />
+
     </PageParent>
   );
 };

@@ -1,7 +1,7 @@
 import { FlexBox } from "../../components/reusables/AllContainers";
 import { Button, Typography, Box } from "@mui/material";
 import { PageParent } from "../../components/reusables/AllContainers";
-import styled from "styled-components";
+
 const WinGoMainWindow = ({ multipliers, currentMultiplier, setCurrentMultiplier }) => {
   return (
     <PageParent sx={{
@@ -100,7 +100,7 @@ const WinGoMainWindow = ({ multipliers, currentMultiplier, setCurrentMultiplier 
         boxShadow: '0 5px 1rem #00ffff20',
 
         }}>
-          Bull
+          Long
         </Button>
         <Button sx={{
           width: '10rem',
@@ -112,9 +112,10 @@ const WinGoMainWindow = ({ multipliers, currentMultiplier, setCurrentMultiplier 
         boxShadow: '0 5px 1rem #00ffff20',
 
         }}>
-          Bear
+          Short
         </Button>
       </FlexBox>
+
 
     </PageParent>)
 }
