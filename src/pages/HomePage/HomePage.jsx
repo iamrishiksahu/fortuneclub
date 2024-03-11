@@ -28,7 +28,8 @@ const HomePage = () => {
 
                 </FlexBox>
                 <Button onClick={() => navigate('/login')} variant="contained" sx={{
-                    backgroundColor: 'var(--purple1)'
+                    background: 'var(--button-purple-gradient1)',
+                    padding: '.375rem 2rem'
                 }}>
                     Login
                 </Button>
@@ -43,7 +44,7 @@ const HomePage = () => {
                 <FlexBox column >
                     <Typography variant="h3" color={"var(--text-black)"} fontWeight={700} textAlign={'center'}>BUILD YOUR FORTUNE </Typography>
                     <Typography variant="h3" color={"var(--purple1)"} fontWeight={700} textAlign={'center'}>PLAY 100% Fair Games</Typography>
-                  
+
 
 
                 </FlexBox>
@@ -51,21 +52,21 @@ const HomePage = () => {
             </FlexBox>
 
             <FlexBox column>
-                <FlexBox column 
-                onClick={() => navigate('/games/win-go')}
-                
-                sx={{
-                    borderRadius: '1rem',
-                    background: 'linear-gradient(45deg, var(--bg-white2), var(--bg-white3))',
-                    padding: '2rem',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    width: '20rem',
-                    height: '20rem',
-                    // aspectRatio: '1/1',
-                    position: 'relative',
-                    cursor: 'pointer'
-                }}>
+                <FlexBox column
+                    onClick={() => navigate('/games/win-go')}
+
+                    sx={{
+                        borderRadius: '1rem',
+                        background: 'linear-gradient(45deg, var(--bg-white2), var(--bg-white3))',
+                        padding: '2rem',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        width: '20rem',
+                        height: '20rem',
+                        // aspectRatio: '1/1',
+                        position: 'relative',
+                        cursor: 'pointer'
+                    }}>
 
                     <FlexBox justifyContent={'space-between'}>
 
@@ -95,10 +96,10 @@ const HomePage = () => {
                     <FlexBox>
 
                         <img width={'12%'} src="/assets/coins/coin_7.png" alt="0" />
-                        <img width={'15%'} style={{marginTop: '5rem'}} src="/assets/coins/coin_6.png" alt="0" />
-                        <img width={'10%'} style={{marginTop: '-5rem'}}  src="/assets/coins/coin_0.png" alt="0" />
-                        <img width={'10%'} style={{marginTop: '6rem'}}  src="/assets/coins/coin_8.png" alt="0" />
-                        <img width={'13%'} style={{marginTop: '2rem'}}  src="/assets/coins/coin_3.png" alt="0" />
+                        <img width={'15%'} style={{ marginTop: '5rem' }} src="/assets/coins/coin_6.png" alt="0" />
+                        <img width={'10%'} style={{ marginTop: '-5rem' }} src="/assets/coins/coin_0.png" alt="0" />
+                        <img width={'10%'} style={{ marginTop: '6rem' }} src="/assets/coins/coin_8.png" alt="0" />
+                        <img width={'13%'} style={{ marginTop: '2rem' }} src="/assets/coins/coin_3.png" alt="0" />
                     </FlexBox>
 
                     <FlexBox justifyContent={'flex-end'}>
@@ -111,9 +112,9 @@ const HomePage = () => {
 
             </FlexBox>
 
-            <HomeFAQ/>
+            <HomeFAQ />
 
-            <FootNote/>
+            <FootNote />
 
 
 
