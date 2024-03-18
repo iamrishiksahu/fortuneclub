@@ -18,7 +18,12 @@ const HomePage = () => {
 
             <FlexBox sx={{
                 justifyContent: 'space-between',
-                alignItems: 'center'
+                alignItems: 'center',
+                position: 'sticky',
+                top: 0,
+                zIndex: '1000',
+                padding: '0.5rem 0',
+                backgroundColor: 'var(--bg-white)',
             }}>
                 {/* LEFT */}
                 <FlexBox sx={{
@@ -182,6 +187,12 @@ const HomePage = () => {
             </FlexBox>
 
             <HomeFAQ />
+
+            {/* DISCLAIMER TEXT */}
+            <Typography sx={{color: 'var(--text1)'}}>DISCLAIMER</Typography>
+            <Typography variant="body2" sx={{color: 'var(--text1)'}}>
+            All games and tournaments under this platform are completely fair and guaranteed to be bot-free and free of any kind of manipulation. Games may be addictive in nature, and may involve financial risks. Player of any of the game voluntarily agrees to play on their own risk and liability. 
+            </Typography>
 
             <FootNote />
 
