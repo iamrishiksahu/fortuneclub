@@ -9,7 +9,7 @@ import HomeNav from "./HomeNav";
 const HomePage = () => {
 
     return (
-        <PageParent>
+        <PageParent paddingLeft={'2rem'} paddingRight={'2rem'}>
 
             {/* MENU BAR */}
             <HomeNav/>
@@ -43,9 +43,10 @@ const HomePage = () => {
             <HomeFAQ />
 
             {/* DISCLAIMER TEXT */}
-            <Typography sx={{color: 'var(--text1)'}}>DISCLAIMER</Typography>
-            <Typography variant="body2" sx={{color: 'var(--text1)'}}>
-            All games and tournaments under this platform are completely fair and guaranteed to be bot-free and free of any kind of manipulation. Games may be addictive in nature, and may involve financial risks. Player of any of the game voluntarily agrees to play on their own risk and liability. 
+            <Typography variant="body2" sx={{color: 'var(--text1)'}}>DISCLAIMER</Typography>
+            <Typography variant="body2" sx={{color: 'var(--text1)', fontSize: '0.5rem', textAlign: 'justify'}}>
+            This game may be habit-forming or financially risky. Play responsibly. FortuneClub is an emerging high quality social gaming app. FortuneClub is only available for people who are above 18 years of age. FortuneClub is available only in those Indian states where skill gaming is allowed by regulations Playing from other states is prohibited. All games and tournaments under this platform are completely fair and guaranteed to be bot-free and free of any kind of manipulation. Games may be addictive in nature, and may involve financial risks. Player of any of the game voluntarily agrees to play on their own risk and liability. FortuneClub Games Pvt. Ltd. is the sole owner of and reserves the right to “FortuneClub” trademark, logos, assets, content, information, etc. used in the website except the third party content. FortuneClub Games Pvt. Ltd. does not acknowledge the accuracy or reliability of third party content.
+             
             </Typography>
 
             <FootNote />
